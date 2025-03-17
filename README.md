@@ -11,6 +11,7 @@
 
 - quinto paso: crear el usuario admin mediante el siguiente json en la la url: http://localhost:3000/api/users por metodo POST
 enviar el siguiente json:
+
 {
   "username":"test",
   "password":"test",
