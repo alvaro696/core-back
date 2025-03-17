@@ -6,7 +6,7 @@ import { logAction } from '../../middlewares/logAction.js';
 const router = Router();
 
 router.route('/')
-    .get(authenticationToken, logAction, distritoController.getDistritos)
+    .get( distritoController.getDistritos)
     .post(authenticationToken, logAction, distritoController.createDistrito);
 
 router.route('/:id')

@@ -2,6 +2,7 @@
 
 - primer paso: crear variables de entorno (.env)
     -crear la base de datos ncesaria (solo crearla)
+    -acorde a esto tambien ajustar la careta config/config.json de la raiz(para los seeders)
 
 - segundo paso: instalar node modules: npm install
 

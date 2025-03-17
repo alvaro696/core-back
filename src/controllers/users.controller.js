@@ -64,35 +64,41 @@ async function getUsers(req, res) {
         res.status(500).json({ message: "Error en el servidor" });
     }
 }
-
 async function createUser(req, res) {
     try {
-        const { username, password, roleId } = req.body;
+        const {
+            username,
+            password,
+            roleId,
+            distritoId = 1,
+            nombres = 'test',
+            paterno = 'test',
+            fecha_nacimiento = null
+        } = req.body;
 
         const userExists = await User.findOne({
-            where: {
-                username
-            },
+            where: { username }
         });
-
         if (userExists) {
             return res.status(400).json({ message: "Usuario ya existe" });
         }
 
-        const distrito = 1;
-        const paterno = "test";
-        const nombres = "test";
-
-        const user = await User.create({ username, password, roleId, distritoId: distrito, paterno, nombres });
+        const user = await User.create({
+            username,
+            password,
+            roleId,
+            distritoId,
+            paterno,
+            nombres,
+            fecha_nacimiento
+        });
         logger.info("Se crea usuario");
 
         if (!user) {
             return res.status(400).json({ message: "Error al crear usuario" });
         }
 
-        // Salio todo bien
         res.json(user);
-
     } catch (error) {
         logger.error("Error en createUser: " + error.message);
         res.status(500).json({ message: "Server error" });
