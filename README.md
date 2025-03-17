@@ -18,7 +18,6 @@ enviar el siguiente json:
   "nombres":"test",
   "paterno":"est",
   "materno":"test",
-  "cargoId":"1",
   "distritoId":"1",
   "fecha_nacimiento":"2000-01-01"
 }

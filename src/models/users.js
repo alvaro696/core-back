@@ -75,19 +75,6 @@ export const User = sequelize.define("users", {
         type: DataTypes.DATE,
         allowNull: true,
     },
-    cargoId: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: Cargo,
-            key: "id",
-        },
-        validate: {
-            notNull: {
-                msg: "Cargo no puede ser null",
-            },
-        }
-    },
     distritoId: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -117,9 +104,6 @@ Task.belongsTo(User);
 
 User.belongsTo(Role, { as: "Role", foreignKey: "roleId" });
 Role.hasMany(User, { foreignKey: "roleId" });
-
-User.belongsTo(Cargo, { as: "Cargo", foreignKey: "cargoId" }); // Relación con Cargo
-Cargo.hasMany(User, { foreignKey: "cargoId" });
 
 User.belongsTo(Distrito, { as: "Distrito", foreignKey: "distritoId" }); // Relación con Distrito
 Distrito.hasMany(User, { foreignKey: "distritoId" });

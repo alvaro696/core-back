@@ -1,0 +1,131 @@
+2025-03-17 10:35:33 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:35:41 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:37:21 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:41:23 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:42:08 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:43:06 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:43:20 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:43:24 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:46:25 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:47:35 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:47:41 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:48:20 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:48:33 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:48:37 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:49:29 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:49:40 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:51:14 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:51:27 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:53:36 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:55:22 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:59:30 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 10:59:58 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:04:59 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:05:15 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:05:49 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:06:29 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:36:01 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:36:54 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:43:02 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:43:03 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:44:43 [INFO]: Se crea usuario
+2025-03-17 11:46:14 [ERROR]: error en login roles is not associated to users!
+2025-03-17 11:46:33 [ERROR]: error en login roles is not associated to users!
+2025-03-17 11:47:04 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:49:28 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:49:34 [ERROR]: error en login roles is not associated to users!
+2025-03-17 11:50:40 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:50:48 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:50:54 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:51:00 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:51:26 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 11:51:30 [INFO]: Se crea usuario
+2025-03-17 11:52:43 [INFO]: Llega petición listar usuarios
+2025-03-17 11:52:43 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 11:52:43 [INFO]: Llega petición listar usuarios
+2025-03-17 11:52:43 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 11:55:01 [INFO]: Llega petición listar usuarios
+2025-03-17 11:55:01 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 11:55:01 [INFO]: Llega petición listar usuarios
+2025-03-17 11:55:01 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 12:00:35 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:01:12 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:01:14 [INFO]: Llega petición listar usuarios
+2025-03-17 12:01:15 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 12:01:15 [INFO]: Llega petición listar usuarios
+2025-03-17 12:01:15 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 12:02:06 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:02:40 [INFO]: Llega petición listar usuarios
+2025-03-17 12:02:40 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 12:02:40 [INFO]: Llega petición listar usuarios
+2025-03-17 12:02:40 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 12:03:08 [INFO]: Llega petición listar usuarios
+2025-03-17 12:03:08 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 12:04:40 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:04:40 [INFO]: Llega petición listar usuarios
+2025-03-17 12:04:40 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 12:05:05 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:05:06 [INFO]: Llega petición listar usuarios
+2025-03-17 12:05:06 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 12:15:01 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:30:00 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:30:45 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:30:47 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:37:57 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:42:04 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:43:05 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:46:27 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:47:08 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:48:19 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:50:17 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:50:36 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:52:18 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:53:46 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:55:32 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:55:35 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:56:47 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:57:48 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 12:59:00 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:00:24 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:01:22 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:06:46 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:12:06 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:14:36 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:15:19 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:27:26 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:28:10 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:28:33 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:29:16 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:29:44 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:30:15 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:31:49 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:32:05 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:33:02 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:34:48 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:38:46 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:38:53 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:39:09 [INFO]: Llega petición listar usuarios
+2025-03-17 13:39:09 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 13:39:09 [INFO]: Llega petición listar usuarios
+2025-03-17 13:39:09 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 13:42:00 [INFO]: Llega petición listar usuarios
+2025-03-17 13:42:00 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 13:42:00 [INFO]: Llega petición listar usuarios
+2025-03-17 13:42:00 [ERROR]: Error en getUsers: search is not defined
+2025-03-17 13:43:31 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:43:36 [INFO]: Llega petición listar usuarios
+2025-03-17 13:43:36 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 13:43:36 [INFO]: Llega petición listar usuarios
+2025-03-17 13:43:36 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 13:44:25 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:45:21 [INFO]: Se crea usuario
+2025-03-17 13:49:44 [INFO]: Llega petición listar usuarios
+2025-03-17 13:49:44 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 13:49:44 [INFO]: Llega petición listar usuarios
+2025-03-17 13:49:44 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 13:50:02 [INFO]: Llega petición listar usuarios
+2025-03-17 13:50:02 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 13:50:02 [INFO]: Llega petición listar usuarios
+2025-03-17 13:50:02 [ERROR]: Error en getUsers: operator does not exist: character varying = integer
+2025-03-17 13:52:42 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-17 13:53:18 [INFO]: inicio -> escuchando en el puerto: 3000

@@ -1,23 +1,23 @@
 {
     "development": {
-        "username": "root",
-        "password": "",
-        "database": "core-back",
+        "username": "postgres",
+        "password": "password*",
+        "database": "postgres",
         "host": "127.0.0.1",
-        "dialect": "mysql"
+        "dialect": "postgres"
     },
     "test": {
-        "username": "root",
-        "password": "",
-        "database": "core-back",
+        "username": "postgres",
+        "password": "postgres*",
+        "database": "bpr",
         "host": "127.0.0.1",
-        "dialect": "mysql"
+        "dialect": "postgres"
     },
     "production": {
-        "username": "root",
-        "password": "",
-        "database": "core-back",
+        "username": "postgres",
+        "password": "postgres*",
+        "database": "bpr",
         "host": "127.0.0.1",
-        "dialect": "mysql"
+        "dialect": "postgres"
     }
 }

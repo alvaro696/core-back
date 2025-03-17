@@ -17,7 +17,4 @@ router.route('/:id')
     .patch(authenticationToken, logAction, usersController.activateInactivate)
     .delete(authenticationToken, logAction, usersController.deleteUser);
 
-router.route('/:id/tasks').get(authenticationToken, usersController.getTasks);
-
-router.route('/day/:day').get(usersController.getCumpleanieros)
 export default router;

@@ -1,0 +1,19 @@
+2025-03-16 20:32:44 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:35:05 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:37:45 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:38:24 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:38:33 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:46:50 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:51:42 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:56:13 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:56:16 [ERROR]: Error en createUser: correo is not defined
+2025-03-16 20:56:37 [INFO]: inicio -> escuchando en el puerto: 3000
+2025-03-16 20:56:40 [INFO]: Se crea usuario
+2025-03-16 21:57:50 [INFO]: Llega petición listar usuarios
+2025-03-16 21:57:50 [INFO]: Llega petición listar usuarios
+2025-03-16 22:13:00 [INFO]: Llega petición listar usuarios
+2025-03-16 22:13:00 [INFO]: Llega petición listar usuarios
+2025-03-16 22:13:04 [INFO]: Llega petición listar usuarios
+2025-03-16 22:13:04 [INFO]: Llega petición listar usuarios
+2025-03-16 22:13:28 [INFO]: Llega petición listar usuarios
+2025-03-16 22:13:29 [INFO]: Llega petición listar usuarios

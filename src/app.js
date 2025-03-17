@@ -16,6 +16,9 @@ import destacadosRoutes from './routes/personal_destacado/destacados.routes.js';
 import publicacaionesRoutes from './routes/publicaciones/publicaciones.routes.js';
 import glosarioRoutes from './routes/publicaciones/glosario.routes.js';
 
+import cuentaRoutes from './routes/cuentas.routes.js';
+import transaccionesRoutes from './routes/transacciones.routes.js';
+
 import cors from "cors";
 
 import path from "path";
@@ -59,5 +62,8 @@ app.use('/api/sala', salasReoutes);
 app.use('/api/destacados', destacadosRoutes);
 app.use('/api/publicaciones', publicacaionesRoutes);
 app.use('/api/glosario', glosarioRoutes);
+
+app.use('/api/cuentas', cuentaRoutes);
+app.use('/api/transaccion', transaccionesRoutes);
 
 export default app;
