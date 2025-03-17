@@ -109,52 +109,69 @@ async function crear(req, res) {
     }
 }
 
-
 async function obtener(req, res) {
     const { userId } = req.user;
     try {
-        const transacciones = await Transaccion.findAll({
-            include: [
-                {
-                    model: Cuenta,
-                    as: "cuentaOrigen",
-                    attributes: ["id", "userId"],
-                },
-                {
-                    model: Cuenta,
-                    as: "cuentaDestino",
-                    attributes: ["id", "userId"],
-                },
-            ],
-            where: {
-                [Op.or]: [
-                    { "$cuentaOrigen.userId$": userId },
-                    { "$cuentaDestino.userId$": userId },
-                ],
-            },
-            order: [["id", "DESC"]],
-        });
-
-        const transaccionesFormateadas = transacciones.map((trx) => {
-            const json = trx.toJSON();
-            let montoFormateado = parseFloat(json.monto);
-            if (json.tipo !== "1") {
-                montoFormateado = -Math.abs(montoFormateado);
-            } else {
-                montoFormateado = Math.abs(montoFormateado);
-            }
-            return {
-                ...json,
-                monto: montoFormateado,
-            };
-        });
-
-        res.json({ data: transaccionesFormateadas });
+      const transacciones = await Transaccion.findAll({
+        include: [
+          {
+            model: Cuenta,
+            as: "cuentaOrigen",
+            attributes: ["id", "userId"],
+          },
+          {
+            model: Cuenta,
+            as: "cuentaDestino",
+            attributes: ["id", "userId"],
+          },
+        ],
+        where: {
+          [Op.or]: [
+            { "$cuentaOrigen.userId$": userId },
+            { "$cuentaDestino.userId$": userId },
+          ],
+        },
+        order: [["id", "DESC"]],
+      });
+  
+      const transaccionesFormateadas = transacciones.map((trx) => {
+        const json = trx.toJSON();
+        let montoFormateado = parseFloat(json.monto);
+        if (json.tipo !== "1") {
+          montoFormateado = -Math.abs(montoFormateado);
+        } else {
+          montoFormateado = Math.abs(montoFormateado);
+        }
+  
+        // Formatear la fecha de creación
+        const fecha = new Date(json.createdAt);
+        const fechaFormateada =
+          fecha.toLocaleDateString('es-ES', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          }) +
+          ' ' +
+          fecha.toLocaleTimeString('es-ES', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          });
+  
+        return {
+          ...json,
+          monto: montoFormateado,
+          createdAt: fechaFormateada, // Reemplazamos el campo createdAt por el formateado
+        };
+      });
+  
+      res.json({ data: transaccionesFormateadas });
     } catch (error) {
-        console.error("Error en getTransaccion:", error);
-        res.status(500).json({ message: "Error en el servidor" });
+      console.error("Error en getTransaccion:", error);
+      res.status(500).json({ message: "Error en el servidor" });
     }
-}
+  }
+  
 
 async function actualizar(req, res) {
     try {
