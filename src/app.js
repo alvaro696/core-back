@@ -10,11 +10,6 @@ import gerenciasRoutes from "./routes/organigrama/gerencias.routes.js";
 import areasRoutes from "./routes/organigrama/areas.routes.js";
 import cargosRoutes from "./routes/organigrama/cargos.routes.js";
 import distritosRoutes from './routes/organigrama/distritos.routes.js';
-import reservasRoutes from './routes/sala_reuniones/reservas.routes.js';
-import salasReoutes from './routes/sala_reuniones/salas.routes.js';
-import destacadosRoutes from './routes/personal_destacado/destacados.routes.js';
-import publicacaionesRoutes from './routes/publicaciones/publicaciones.routes.js';
-import glosarioRoutes from './routes/publicaciones/glosario.routes.js';
 
 import cuentaRoutes from './routes/cuentas.routes.js';
 import transaccionesRoutes from './routes/transacciones.routes.js';
@@ -57,11 +52,6 @@ app.use("/api/gerencia", gerenciasRoutes);
 app.use("/api/area", areasRoutes);
 app.use("/api/cargo", cargosRoutes);
 app.use('/api/distrito', distritosRoutes);
-app.use('/api/reservar', reservasRoutes);
-app.use('/api/sala', salasReoutes);
-app.use('/api/destacados', destacadosRoutes);
-app.use('/api/publicaciones', publicacaionesRoutes);
-app.use('/api/glosario', glosarioRoutes);
 
 app.use('/api/cuentas', cuentaRoutes);
 app.use('/api/transaccion', transaccionesRoutes);
