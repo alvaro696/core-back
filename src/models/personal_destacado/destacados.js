@@ -48,7 +48,7 @@ export const Destacado = sequelize.define("personal_destacado", {
     },
 })
 
-Destacado.sync();
+//Destacado.sync();
 
 Destacado.belongsTo(User, { foreignKey: 'userId', as: 'user' });
 User.hasMany(Destacado, { foreignKey: 'userId' });

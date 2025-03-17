@@ -53,7 +53,7 @@ export const Reserva = sequelize.define('reservas', {
 });
 
 // Sincronizar el modelo con la base de datos (opcional)
-Reserva.sync();
+//Reserva.sync();
 
 User.hasMany(Reserva, { foreignKey: 'userId' });
 Reserva.belongsTo(User, { foreignKey: 'id' });

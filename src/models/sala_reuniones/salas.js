@@ -36,7 +36,7 @@ export const Sala = sequelize.define('salas', {
     },
 });
 
-Sala.sync();
+//Sala.sync();
 
 Sala.hasMany(Reserva, { foreignKey: 'salaId' });
 Reserva.belongsTo(Sala, { foreignKey: 'id' });

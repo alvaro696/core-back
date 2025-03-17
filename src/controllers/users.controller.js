@@ -30,30 +30,30 @@ async function getUsers(req, res) {
         const result = await User.findAndCountAll({
             attributes: ["id", "username", "status", "roleId", "nombres", "paterno", "materno"],
             include: [{
-                    model: Role,
-                    as: "Role",
-                    attributes: ["name"],
-                },
-                {
-                    model: Cargo,
-                    as: "Cargo",
+                model: Role,
+                as: "Role",
+                attributes: ["name"],
+            },
+            {
+                model: Cargo,
+                as: "Cargo",
+                attributes: ["name"],
+                include: [{
+                    model: Area,
+                    as: "area",
                     attributes: ["name"],
                     include: [{
-                        model: Area,
-                        as: "area",
+                        model: Gerencia,
+                        as: "gerencia",
                         attributes: ["name"],
-                        include: [{
-                            model: Gerencia,
-                            as: "gerencia",
-                            attributes: ["name"],
-                        }, ],
-                    }, ],
-                },
-                {
-                    model: Distrito,
-                    as: "Distrito",
-                    attributes: ["name"],
-                },
+                    },],
+                },],
+            },
+            {
+                model: Distrito,
+                as: "Distrito",
+                attributes: ["name"],
+            },
             ],
             where: whereClause,
             order: [
@@ -93,13 +93,11 @@ async function getUsers(req, res) {
 
 async function createUser(req, res) {
     try {
-        const { password, roleId, nombres, paterno, materno, cargoId, distritoId, fecha_nacimiento } = req.body;
+        const { username, password, roleId, nombres, paterno, materno, cargoId, distritoId, fecha_nacimiento } = req.body;
 
         const userExists = await User.findOne({
             where: {
-                nombres,
-                paterno,
-                materno,
+                username
             },
         });
 
@@ -115,8 +113,8 @@ async function createUser(req, res) {
                 include: [{
                     model: Gerencia,
                     as: "gerencia",
-                }, ],
-            }, ],
+                },],
+            },],
         });
 
         const distrito = await Distrito.findOne({
@@ -127,24 +125,16 @@ async function createUser(req, res) {
             return res.status(400).json({ message: "Cargo o Distrito no encontrado" });
         }
 
-        // Extraer los nombres completos
-        const gerencia = cargo.area.gerencia.name || "No asignado";
-        const area = cargo.area.name || "No asignado";
-        const cargoName = cargo.name || "No asignado";
-        const distritoName = distrito.name || "No asignado";
+        const user = await User.create({ username, password, roleId, nombres, paterno, materno, cargoId, distritoId, fecha_nacimiento });
+        logger.info("Se crea usuario");
 
-        const dataSend = {
-            password,
-            nombres,
-            paterno,
-            materno,
-            gerencia,
-            area,
-            cargoName,
-            distritoName,
-        };
+        if (!user) {
+            return res.status(400).json({ message: "Error al crear usuario" });
+        }
 
-        try {
+        // Salio todo bien
+        res.json(user);
+        /* try {
             const response = await axios.post(process.env.URL_LEGACY + '/unisersoft_bk/action/intranet/user_crear.php', dataSend, {
                 headers: {
                     'Content-Type': 'application/json',
@@ -181,7 +171,7 @@ async function createUser(req, res) {
                 res.status(500).json({ message: "Error del servidor" });
             }
         }
-
+ */
     } catch (error) {
         logger.error("Error en createUser: " + error.message);
         res.status(500).json({ message: "Server error" });
@@ -274,7 +264,7 @@ async function getTasks(req, res) {
                 /* where: {
                           'done': true
                       }, */
-            }, ],
+            },],
             where: { id },
         });
         res.json(user);
@@ -294,7 +284,7 @@ async function getTasksAll(req, res) {
                 /* where: {
                           'done': true
                       }, */
-            }, ],
+            },],
         });
         res.json(user);
     } catch (error) {

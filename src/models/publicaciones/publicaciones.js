@@ -91,7 +91,7 @@ export const Publicacion = sequelize.define("publicaciones", {
     },
 });
 
-Publicacion.sync();
+//Publicacion.sync();
 
 Publicacion.belongsTo(User, { as: "user", foreignKey: "userId" });
 Publicacion.belongsTo(Area, { as: "area", foreignKey: "areaId" });

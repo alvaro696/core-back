@@ -58,4 +58,4 @@ export const Glosario = sequelize.define('glosario', {
     },
 });
 
-Glosario.sync();
+//Glosario.sync();
