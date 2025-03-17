@@ -67,7 +67,7 @@ async function getUsers(req, res) {
 
 async function createUser(req, res) {
     try {
-        const { username, password, roleId, nombres, paterno, materno, distritoId, fecha_nacimiento } = req.body;
+        const { username, password, roleId } = req.body;
 
         const userExists = await User.findOne({
             where: {
@@ -79,11 +79,11 @@ async function createUser(req, res) {
             return res.status(400).json({ message: "Usuario ya existe" });
         }
 
-        const distrito = await Distrito.findOne({
-            where: { id: distritoId },
-        });
+        const distrito = 1;
+        const paterno = "test";
+        const nombres = "test";
 
-        const user = await User.create({ username, password, roleId, nombres, paterno, materno, distritoId, fecha_nacimiento });
+        const user = await User.create({ username, password, roleId, distritoId: distrito, paterno, nombres });
         logger.info("Se crea usuario");
 
         if (!user) {
